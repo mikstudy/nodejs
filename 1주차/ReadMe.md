@@ -17,8 +17,10 @@
 
 <br>
 ##### 3. git 계정 정보 저장
->$ git config --global user.name "[이름(예: JiHyung Lee)]"  
->$ git config --global user.email "[이메일(예: jhlee.8804@gmail.com)]"
+```
+  $ git config --global user.name "[이름(예: JiHyung Lee)]"
+  $ git config --global user.email "[이메일(예: jhlee.8804@gmail.com)]"
+```
 
 <br>
 ##### 4. git 사용 가이드
@@ -30,7 +32,7 @@
 
 <br>
 ##### 6. study 저장소를 로컬로 복제
->$ git clone [UserID]@github.com:mikstudy/nodejs.git
+`$ git clone [UserID]@github.com:mikstudy/nodejs.git`
 
 <br>
 ##### 7. SourceTree 설치 후 로컬에 복제 된 저장소를 불러오기
