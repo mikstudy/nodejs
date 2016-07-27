@@ -99,7 +99,7 @@
  });
  ```
  
- #### D. run-sequence
+ #### E. run-sequence
  ```bash
  $ npm install run-sequence
  ```
