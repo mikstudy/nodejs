@@ -1,0 +1,1 @@
+function human(){this.handsUp=function(){console.log("lol !!!")},this.hello=function(){console.log("aaa")}}function puppy(){this.bark=function(){console.log("bark!!!!")}}
