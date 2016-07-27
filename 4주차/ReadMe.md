@@ -83,6 +83,32 @@
  $ gulp watch
  ```
  
+ #### D. notify
+ ```bash
+ $ npm install gulp-notify
+ ``` 
+ ```js
+ const notify = require('gulp-notify');
+ 
+ gulp.task('min-js', () => {
+      return gulp.src('./js/**.js')
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('./www/js'))
+		.pipe(notify('Built: js'));	// notify
+ });
+ ```
+ 
+ #### D. run-sequence
+ ```bash
+ $ npm install run-sequence
+ ```
+ ```js
+ const runSequence = require('run-sequence');
+ 
+ gulp.task('default', runSequence('min-lib', 'min-js'));
+ ``` 
+ 
  
  
  
