@@ -152,3 +152,6 @@ create table test_table (id integer, name text);
 insert into test_table values (1, 'hello database');
 ```
 
+### 13. Heroku Dataclips
+`heroku`에선 [DataClip](https://dataclips.heroku.com/clips)이라는 웹페이지를 제공하는데, 여기서 DB로 바로 쿼리를 실행 할 수 있고, 쿼리를 저장 할 수도 있다. 다만 `Dataclips`는 insert나 update 등의 수정 쿼리는 실행 할 수 없고, 결과를 볼 수 있는 select 쿼리만 허용한다.
+
