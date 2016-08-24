@@ -141,16 +141,14 @@ app.get('/db', function (request, response) {
 });
 ```
 
-이제 8번 항목에서 설명했듯이, 서버로 소스를 반영한다. 반영 후 아래와 같이 `test_table`을 생성하여 샘플 데이터를 넣어주자.
-```bash
-$ heroku pg:psql
- 
-psql (9.3.2, server 9.3.3)
-SSL connection (cipher: DHE-RSA-AES256-SHA, bits: 256)
-Type "help" for help.
-=> create table test_table (id integer, name text);
-CREATE TABLE
-=> insert into test_table values (1, 'hello database');
-INSERT 0 1
-=> \q
+### 11. DB 접속을 위한 pgAdmin 설치
+https://www.pgadmin.org/download/ 로 접속하여 pgAdmin을 설치한다. https://postgres.heroku.com/databases/ 페이지에서 DB 접속 정보를 확인하여 DB에 접속해보자.
+참고 링크: http://agileforce.co.uk/heroku-workshop/heroku-postgres/pgadmin.html
+
+### 12. 샘플 DB 테이블 생성
+아래 SQL을 입력 한 다음 `/db`로 접속해보자.
+```sql
+create table test_table (id integer, name text);
+insert into test_table values (1, 'hello database');
 ```
+
